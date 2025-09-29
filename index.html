@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Planejamento Reprodutivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <div class="quiz-header">
+                <h1>Quiz: Planejamento Reprodutivo</h1>
+                <p>Teste seus conhecimentos sobre saúde reprodutiva</p>
+            </div>
+            <div class="home-image">
+                <img src="images/jkTQywncvv6n.jpg" alt="Planejamento Reprodutivo">
+            </div>
+            <a class="btn" href="#" id="start-btn">Iniciar Quiz</a>
+            <div class="instructions">
+                <p><i class="fas fa-info-circle"></i> Responda às 6 perguntas e veja seu resultado no final</p>
+            </div>
+        </div>
+
+        <div id="quiz" class="hide">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="quiz-info">
+                    <span id="question-counter">Pergunta 1 de 6</span>
+                    <span id="score-display">Pontuação: 0</span>
+                </div>
+            </div>
+            
+            <h2 id="question">Pergunta vai aqui</h2>
+            
+            <div class="quiz-content">
+                <div class="options-container" id="options-container">
+                    <!-- Opções serão inseridas pelo JavaScript -->
+                </div>
+                
+                <div class="image-container">
+                    <img id="question-image" src="" alt="Imagem da pergunta">
+                </div>
+            </div>
+            
+            <div id="explanation" class="explanation hide">
+                <i class="fas fa-lightbulb"></i>
+                <p id="explanation-text"></p>
+            </div>
+            
+            <div class="controls">
+                <button id="next-btn" class="btn next-btn hide">Próxima Pergunta</button>
+            </div>
+        </div>
+
+        <div id="end" class="flex-center flex-column hide">
+            <h2>Resultado Final</h2>
+            <div class="final-score-container">
+                <div class="circle-score">
+                    <span id="final-score">0</span>
+                    <span class="total">/6</span>
+                </div>
+            </div>
+            <p id="final-message">Mensagem baseada na pontuação</p>
+            <div class="end-buttons">
+                <a class="btn" href="#" id="play-again-btn">Jogar Novamente</a>
+                <a class="btn" href="#" id="go-home-btn">Voltar ao Início</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
